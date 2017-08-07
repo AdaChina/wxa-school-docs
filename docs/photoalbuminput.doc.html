@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
-    <title>WxaSchoolMutation</title>
+    <title>PhotoAlbumInput</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./assets/code.css" /><link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
 </head>
 <body class="slds-scrollable--y">
@@ -30,9 +30,9 @@
                 <code>WxaSchoolQuery</code>
             </a>
         </li>
-        <li class="slds-is-active" title="WxaSchoolMutation">
-            <a href="wxaschoolmutation.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                <code>WxaSchoolMutation</code>
+        <li  title="WxaSchoolBaseMutation">
+            <a href="wxaschoolbasemutation.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                <code>WxaSchoolBaseMutation</code>
             </a>
         </li>
     </ul>
@@ -68,6 +68,11 @@
         <li  title="String">
             <a href="string.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 <code>String</code>
+            </a>
+        </li>
+        <li  title="UploadFile">
+            <a href="uploadfile.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                <code>UploadFile</code>
             </a>
         </li>
     </ul>
@@ -223,6 +228,21 @@
     </ul>
 </div>
 <div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Input Objects</h4>
+    <ul>
+        <li  title="FeatureInput">
+            <a href="featureinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                <code>FeatureInput</code>
+            </a>
+        </li>
+        <li class="slds-is-active" title="PhotoAlbumInput">
+            <a href="photoalbuminput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                <code>PhotoAlbumInput</code>
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
     <h4 class="slds-text-title--caps slds-p-around--medium">Directives</h4>
     <ul>
         <li  title="deprecated">
@@ -255,16 +275,16 @@
             </div>
         </div>
 <section class="title">
-    <h1 class="slds-text-heading--large"><code>WxaSchoolMutation</code></h1>
+    <h1 class="slds-text-heading--large"><code>PhotoAlbumInput</code></h1>
     <div class="gdoc-text--introduction slds-m-top--small slds-m-bottom--x-large"></div>
 </section>
 <section>
 <h2 class="slds-section__title slds-m-top--small">GraphQL Schema definition</h3>
-<code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">WxaSchoolMutation</span> {</li><li></li><li><span class="tab"><span class="comment line">#   绑定后台老师账号,成功则返回无意义字符串</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>email</strong>: 账号邮箱</span></span></li><li><span class="tab"><span class="comment line">#   <strong>password</strong>: 账号密码</span></span></li><li><span class="tab"><span class="meta">bindAccount</span>(<li><span class="tab"><span class="comment line">#   账号邮箱</span></span></li><li><span class="tab"><span class="meta">email</span>: <a class="support type" href="string.doc.html">String</a>!</span></li>, <li><span class="tab"><span class="comment line">#   账号密码</span></span></li><li><span class="tab"><span class="meta">password</span>: <a class="support type" href="string.doc.html">String</a>!</span></li>): <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   接绑后台老师账号,成功则返回无意义字符串</span></span></li><li><span class="tab"><span class="meta">unbindAccount</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li>}</li></ul></code>
+<code class="highlight"><ul class="code" style="padding-left:28px"><li><span class="keyword operator ts">input</span> <span class="identifier">PhotoAlbumInput</span> {</li><li><span class="tab"><li><span class="tab"><span class="meta">title</span>: <a class="support type" href="string.doc.html">String</a>!</span></li></span></li><li><span class="tab"><li><span class="tab"><span class="meta">date</span>: <a class="support type" href="date.doc.html">Date</a>!</span></li></span></li><li>}</li></ul></code>
 </section>
 <section>
 <h2 class="slds-section__title slds-m-top--small">Require by</h3>
-<div class="require-by anyone">This element is not required by anyone</div>
+<ul class="require-by"><li><a href="wxaschoolbasemutation.doc.html" title="WxaSchoolBaseMutation - ">WxaSchoolBaseMutation<em>null</em></a><li></ul>
 </section>
     </main>
     <footer><div class="slds-col-rule--top slds-p-around--large slds-section-title--divider">

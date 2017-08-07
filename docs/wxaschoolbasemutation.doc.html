@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
-    <title>Float</title>
+    <title>WxaSchoolBaseMutation</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./assets/code.css" /><link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
 </head>
 <body class="slds-scrollable--y">
@@ -30,7 +30,7 @@
                 <code>WxaSchoolQuery</code>
             </a>
         </li>
-        <li  title="WxaSchoolBaseMutation">
+        <li class="slds-is-active" title="WxaSchoolBaseMutation">
             <a href="wxaschoolbasemutation.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 <code>WxaSchoolBaseMutation</code>
             </a>
@@ -50,7 +50,7 @@
                 <code>Date</code>
             </a>
         </li>
-        <li class="slds-is-active" title="Float">
+        <li  title="Float">
             <a href="float.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 <code>Float</code>
             </a>
@@ -275,17 +275,16 @@
             </div>
         </div>
 <section class="title">
-    <h1 class="slds-text-heading--large"><code>Float</code></h1>
-    <div class="gdoc-text--introduction slds-m-top--small slds-m-bottom--x-large"><p>Represents signed double-precision fractional values as specified by <a href="http://en.wikipedia.org/wiki/IEEE_floating_point">IEEE 754</a>.</p>
-</div>
+    <h1 class="slds-text-heading--large"><code>WxaSchoolBaseMutation</code></h1>
+    <div class="gdoc-text--introduction slds-m-top--small slds-m-bottom--x-large"></div>
 </section>
 <section>
 <h2 class="slds-section__title slds-m-top--small">GraphQL Schema definition</h3>
-<code class="highlight"><ul class="code" style="padding-left:28px"><li><span class="keyword operator ts">scalar</span> <span class="identifier">Float</span></li></ul></code>
+<code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">WxaSchoolBaseMutation</span> {</li><li></li><li><span class="tab"><span class="comment line">#   绑定后台老师账号,成功则返回无意义字符串</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>email</strong>: 账号邮箱</span></span></li><li><span class="tab"><span class="comment line">#   <strong>password</strong>: 账号密码</span></span></li><li><span class="tab"><span class="meta">bindAccount</span>(<li><span class="tab"><span class="comment line">#   账号邮箱</span></span></li><li><span class="tab"><span class="meta">email</span>: <a class="support type" href="string.doc.html">String</a>!</span></li>, <li><span class="tab"><span class="comment line">#   账号密码</span></span></li><li><span class="tab"><span class="meta">password</span>: <a class="support type" href="string.doc.html">String</a>!</span></li>): <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   创建班级简介</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>feature</strong>: 班级简介</span></span></li><li><span class="tab"><span class="meta">createFeature</span>(<li><span class="tab"><span class="comment line">#   班级简介</span></span></li><li><span class="tab"><span class="meta">feature</span>: <a class="support type" href="featureinput.doc.html">FeatureInput</a>!</span></li>): <a class="support type" href="feature.doc.html">Feature</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   创建班级故事</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>photoAlbum</strong>: 班级故事</span></span></li><li><span class="tab"><span class="meta">createPhotoAlbum</span>(<li><span class="tab"><span class="comment line">#   班级故事</span></span></li><li><span class="tab"><span class="meta">photoAlbum</span>: <a class="support type" href="photoalbuminput.doc.html">PhotoAlbumInput</a>!</span></li>): <a class="support type" href="photoalbum.doc.html">PhotoAlbum</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   接绑后台老师账号,成功则返回无意义字符串</span></span></li><li><span class="tab"><span class="meta">unbindAccount</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li>}</li></ul></code>
 </section>
 <section>
 <h2 class="slds-section__title slds-m-top--small">Require by</h3>
-<ul class="require-by"><li><a href="photo.doc.html" title="Photo - 班级相册照片">Photo<em>班级相册照片</em></a><li></ul>
+<div class="require-by anyone">This element is not required by anyone</div>
 </section>
     </main>
     <footer><div class="slds-col-rule--top slds-p-around--large slds-section-title--divider">
