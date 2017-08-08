@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
-    <title>FeatureConnection</title>
+    <title>PhotoInput</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./assets/code.css" /><link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
 </head>
 <body class="slds-scrollable--y">
@@ -115,7 +115,7 @@
                 <code>Feature</code>
             </a>
         </li>
-        <li class="slds-is-active" title="FeatureConnection">
+        <li  title="FeatureConnection">
             <a href="featureconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 <code>FeatureConnection</code>
             </a>
@@ -240,7 +240,7 @@
                 <code>PhotoAlbumInput</code>
             </a>
         </li>
-        <li  title="PhotoInput">
+        <li class="slds-is-active" title="PhotoInput">
             <a href="photoinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 <code>PhotoInput</code>
             </a>
@@ -285,17 +285,16 @@
             </div>
         </div>
 <section class="title">
-    <h1 class="slds-text-heading--large"><code>FeatureConnection</code></h1>
-    <div class="gdoc-text--introduction slds-m-top--small slds-m-bottom--x-large"><p>The connection type for Feature.</p>
-</div>
+    <h1 class="slds-text-heading--large"><code>PhotoInput</code></h1>
+    <div class="gdoc-text--introduction slds-m-top--small slds-m-bottom--x-large"></div>
 </section>
 <section>
 <h2 class="slds-section__title slds-m-top--small">GraphQL Schema definition</h3>
-<code class="highlight"><ul class="code" style="padding-left:28px"><li><span class="keyword operator ts">type</span> <span class="identifier">FeatureConnection</span> {</li><li></li><li><span class="tab"><span class="comment line">#   A list of edges.</span></span></li><li><span class="tab"><span class="meta">edges</span>: [<a class="support type" href="featureedge.doc.html">FeatureEdge</a>] </span></li><li></li><li><span class="tab"><span class="comment line">#   Information to aid in pagination.</span></span></li><li><span class="tab"><span class="meta">pageInfo</span>: <a class="support type" href="pageinfo.doc.html">PageInfo</a>! </span></li><li>}</li></ul></code>
+<code class="highlight"><ul class="code" style="padding-left:28px"><li><span class="keyword operator ts">input</span> <span class="identifier">PhotoInput</span> {</li><li><span class="tab"><li><span class="tab"><span class="comment line">#   标题</span></span></li><li><span class="tab"><span class="meta">description</span>: <a class="support type" href="string.doc.html">String</a>!</span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   照片</span></span></li><li><span class="tab"><span class="meta">image</span>: <a class="support type" href="uploadfile.doc.html">UploadFile</a>!</span></li></span></li><li>}</li></ul></code>
 </section>
 <section>
 <h2 class="slds-section__title slds-m-top--small">Require by</h3>
-<ul class="require-by"><li><a href="staticclass.doc.html" title="StaticClass - 固定班">StaticClass<em>固定班</em></a><li><li><a href="wxaschoolquery.doc.html" title="WxaSchoolQuery - ">WxaSchoolQuery<em>null</em></a><li></ul>
+<ul class="require-by"><li><a href="wxaschoolmutation.doc.html" title="WxaSchoolMutation - ">WxaSchoolMutation<em>null</em></a><li></ul>
 </section>
     </main>
     <footer><div class="slds-col-rule--top slds-p-around--large slds-section-title--divider">
