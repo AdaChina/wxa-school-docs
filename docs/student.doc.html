@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
-    <title>PraiseEdge</title>
+    <title>Student</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./assets/code.css" /><link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
 </head>
 <body class="slds-scrollable--y">
@@ -175,7 +175,7 @@
                 <code>PraiseConnection</code>
             </a>
         </li>
-        <li class="slds-is-active" title="PraiseEdge">
+        <li  title="PraiseEdge">
             <a href="praiseedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 <code>PraiseEdge</code>
             </a>
@@ -195,7 +195,7 @@
                 <code>StaticClass</code>
             </a>
         </li>
-        <li  title="Student">
+        <li class="slds-is-active" title="Student">
             <a href="student.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 <code>Student</code>
             </a>
@@ -295,17 +295,17 @@
             </div>
         </div>
 <section class="title">
-    <h1 class="slds-text-heading--large"><code>PraiseEdge</code></h1>
-    <div class="gdoc-text--introduction slds-m-top--small slds-m-bottom--x-large"><p>An edge in a connection.</p>
+    <h1 class="slds-text-heading--large"><code>Student</code></h1>
+    <div class="gdoc-text--introduction slds-m-top--small slds-m-bottom--x-large"><p>学生</p>
 </div>
 </section>
 <section>
 <h2 class="slds-section__title slds-m-top--small">GraphQL Schema definition</h3>
-<code class="highlight"><ul class="code" style="padding-left:28px"><li><span class="keyword operator ts">type</span> <span class="identifier">PraiseEdge</span> {</li><li></li><li><span class="tab"><span class="comment line">#   A cursor for use in pagination.</span></span></li><li><span class="tab"><span class="meta">cursor</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The item at the end of the edge.</span></span></li><li><span class="tab"><span class="meta">node</span>: <a class="support type" href="praise.doc.html">Praise</a> </span></li><li>}</li></ul></code>
+<code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">Student</span> {</li><li></li><li><span class="tab"><span class="meta">avatarUrl</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="meta">birthday</span>: <a class="support type" href="date.doc.html">Date</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   性别: ["男", "女"]</span></span></li><li><span class="tab"><span class="meta">gender</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="id.doc.html">ID</a>! </span></li><li></li><li><span class="tab"><span class="meta">name</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   学号</span></span></li><li><span class="tab"><span class="meta">number</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   学生所在学校</span></span></li><li><span class="tab"><span class="meta">school</span>: <a class="support type" href="school.doc.html">School</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   学生所在班级</span></span></li><li><span class="tab"><span class="meta">staticClass</span>: <a class="support type" href="staticclass.doc.html">StaticClass</a> </span></li><li>}</li></ul></code>
 </section>
 <section>
 <h2 class="slds-section__title slds-m-top--small">Require by</h3>
-<ul class="require-by"><li><a href="praiseconnection.doc.html" title="PraiseConnection - The connection type for Praise.">PraiseConnection<em>The connection type for Praise.</em></a><li></ul>
+<ul class="require-by"><li><a href="wxaschoolquery.doc.html" title="WxaSchoolQuery - ">WxaSchoolQuery<em>null</em></a><li></ul>
 </section>
     </main>
     <footer><div class="slds-col-rule--top slds-p-around--large slds-section-title--divider">
