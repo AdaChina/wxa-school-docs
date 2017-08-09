@@ -50,11 +50,6 @@
                 <code>Date</code>
             </a>
         </li>
-        <li  title="Float">
-            <a href="float.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                <code>Float</code>
-            </a>
-        </li>
         <li  title="ID">
             <a href="id.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 <code>ID</code>
@@ -100,6 +95,11 @@
 <div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
     <h4 class="slds-text-title--caps slds-p-around--medium">Objects</h4>
     <ul>
+        <li  title="ClientNoti">
+            <a href="clientnoti.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                <code>ClientNoti</code>
+            </a>
+        </li>
         <li  title="Comment">
             <a href="comment.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 <code>Comment</code>
@@ -240,6 +240,11 @@
 <div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
     <h4 class="slds-text-title--caps slds-p-around--medium">Input Objects</h4>
     <ul>
+        <li  title="ClientNotiInput">
+            <a href="clientnotiinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                <code>ClientNotiInput</code>
+            </a>
+        </li>
         <li  title="FeatureInput">
             <a href="featureinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 <code>FeatureInput</code>
@@ -258,6 +263,16 @@
         <li  title="PraiseInput">
             <a href="praiseinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 <code>PraiseInput</code>
+            </a>
+        </li>
+        <li  title="UpdateFeatureInput">
+            <a href="updatefeatureinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                <code>UpdateFeatureInput</code>
+            </a>
+        </li>
+        <li  title="UpdateFeatureOrderInput">
+            <a href="updatefeatureorderinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                <code>UpdateFeatureOrderInput</code>
             </a>
         </li>
     </ul>
@@ -301,7 +316,7 @@
 </section>
 <section>
 <h2 class="slds-section__title slds-m-top--small">GraphQL Schema definition</h3>
-<code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">Photo</span> {</li><li></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>first</strong>: Returns the first _n_ elements from the list.</span></span></li><li><span class="tab"><span class="comment line">#   <strong>after</strong>: Returns the elements in the list that come after the </span></span></li><li><span class="tab"><span class="comment line">#   specified global ID.</span></span></li><li><span class="tab"><span class="comment line">#   <strong>last</strong>: Returns the last _n_ elements from the list.</span></span></li><li><span class="tab"><span class="comment line">#   <strong>before</strong>: Returns the elements in the list that come before the </span></span></li><li><span class="tab"><span class="comment line">#   specified global ID.</span></span></li><li><span class="tab"><span class="meta">comments</span>(<li><span class="tab"><span class="comment line">#   Returns the first _n_ elements from the list.</span></span></li><li><span class="tab"><span class="meta">first</span>: <a class="support type" href="int.doc.html">Int</a></span></li>, <li><span class="tab"><span class="comment line">#   Returns the elements in the list that come after the specified global ID.</span></span></li><li><span class="tab"><span class="meta">after</span>: <a class="support type" href="string.doc.html">String</a></span></li>, <li><span class="tab"><span class="comment line">#   Returns the last _n_ elements from the list.</span></span></li><li><span class="tab"><span class="meta">last</span>: <a class="support type" href="int.doc.html">Int</a></span></li>, <li><span class="tab"><span class="comment line">#   Returns the elements in the list that come before the specified global ID.</span></span></li><li><span class="tab"><span class="meta">before</span>: <a class="support type" href="string.doc.html">String</a></span></li>): <a class="support type" href="commentconnection.doc.html">CommentConnection</a> </span></li><li></li><li><span class="tab"><span class="meta">commentsCount</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="meta">description</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="meta">height</span>: <a class="support type" href="float.doc.html">Float</a> </span></li><li></li><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="id.doc.html">ID</a>! </span></li><li></li><li><span class="tab"><span class="meta">imageUrl</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   当前用户是否已点赞</span></span></li><li><span class="tab"><span class="meta">liked</span>: <a class="support type" href="boolean.doc.html">Boolean</a>! </span></li><li></li><li><span class="tab"><span class="meta">likesCount</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="meta">width</span>: <a class="support type" href="float.doc.html">Float</a> </span></li><li>}</li></ul></code>
+<code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">Photo</span> {</li><li></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>first</strong>: Returns the first _n_ elements from the list.</span></span></li><li><span class="tab"><span class="comment line">#   <strong>after</strong>: Returns the elements in the list that come after the </span></span></li><li><span class="tab"><span class="comment line">#   specified global ID.</span></span></li><li><span class="tab"><span class="comment line">#   <strong>last</strong>: Returns the last _n_ elements from the list.</span></span></li><li><span class="tab"><span class="comment line">#   <strong>before</strong>: Returns the elements in the list that come before the </span></span></li><li><span class="tab"><span class="comment line">#   specified global ID.</span></span></li><li><span class="tab"><span class="meta">comments</span>(<li><span class="tab"><span class="comment line">#   Returns the first _n_ elements from the list.</span></span></li><li><span class="tab"><span class="meta">first</span>: <a class="support type" href="int.doc.html">Int</a></span></li>, <li><span class="tab"><span class="comment line">#   Returns the elements in the list that come after the specified global ID.</span></span></li><li><span class="tab"><span class="meta">after</span>: <a class="support type" href="string.doc.html">String</a></span></li>, <li><span class="tab"><span class="comment line">#   Returns the last _n_ elements from the list.</span></span></li><li><span class="tab"><span class="meta">last</span>: <a class="support type" href="int.doc.html">Int</a></span></li>, <li><span class="tab"><span class="comment line">#   Returns the elements in the list that come before the specified global ID.</span></span></li><li><span class="tab"><span class="meta">before</span>: <a class="support type" href="string.doc.html">String</a></span></li>): <a class="support type" href="commentconnection.doc.html">CommentConnection</a> </span></li><li></li><li><span class="tab"><span class="meta">commentsCount</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="meta">description</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="id.doc.html">ID</a>! </span></li><li></li><li><span class="tab"><span class="meta">imageUrl</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   当前用户是否已点赞</span></span></li><li><span class="tab"><span class="meta">liked</span>: <a class="support type" href="boolean.doc.html">Boolean</a>! </span></li><li></li><li><span class="tab"><span class="meta">likesCount</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li>}</li></ul></code>
 </section>
 <section>
 <h2 class="slds-section__title slds-m-top--small">Require by</h3>
