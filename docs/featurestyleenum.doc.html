@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
-    <title>PhotoAlbumEdge</title>
+    <title>FeatureStyleEnum</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./assets/code.css" /><link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
 </head>
 <body class="slds-scrollable--y">
@@ -75,7 +75,7 @@
 <div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
     <h4 class="slds-text-title--caps slds-p-around--medium">Enums</h4>
     <ul>
-        <li  title="FeatureStyleEnum">
+        <li class="slds-is-active" title="FeatureStyleEnum">
             <a href="featurestyleenum.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 <code>FeatureStyleEnum</code>
             </a>
@@ -155,7 +155,7 @@
                 <code>PhotoAlbumConnection</code>
             </a>
         </li>
-        <li class="slds-is-active" title="PhotoAlbumEdge">
+        <li  title="PhotoAlbumEdge">
             <a href="photoalbumedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 <code>PhotoAlbumEdge</code>
             </a>
@@ -320,17 +320,17 @@
             </div>
         </div>
 <section class="title">
-    <h1 class="slds-text-heading--large"><code>PhotoAlbumEdge</code></h1>
-    <div class="gdoc-text--introduction slds-m-top--small slds-m-bottom--x-large"><p>An edge in a connection.</p>
+    <h1 class="slds-text-heading--large"><code>FeatureStyleEnum</code></h1>
+    <div class="gdoc-text--introduction slds-m-top--small slds-m-bottom--x-large"><p>班级简介风格</p>
 </div>
 </section>
 <section>
 <h2 class="slds-section__title slds-m-top--small">GraphQL Schema definition</h3>
-<code class="highlight"><ul class="code" style="padding-left:28px"><li><span class="keyword operator ts">type</span> <span class="identifier">PhotoAlbumEdge</span> {</li><li></li><li><span class="tab"><span class="comment line">#   A cursor for use in pagination.</span></span></li><li><span class="tab"><span class="meta">cursor</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The item at the end of the edge.</span></span></li><li><span class="tab"><span class="meta">node</span>: <a class="support type" href="photoalbum.doc.html">PhotoAlbum</a> </span></li><li>}</li></ul></code>
+<code class="highlight"><ul class="code" style="padding-left:28px"><li><span class="keyword operator ts">enum</span> <span class="identifier">FeatureStyleEnum</span> {</li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   全屏</span></span></li><li><span class="tab"><span class="meta">fullscreen</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   半屏</span></span></li><li><span class="tab"><span class="meta">halfscreen</span></span></li><li>}</li></ul></code>
 </section>
 <section>
 <h2 class="slds-section__title slds-m-top--small">Require by</h3>
-<ul class="require-by"><li><a href="photoalbumconnection.doc.html" title="PhotoAlbumConnection - The connection type for PhotoAlbum.">PhotoAlbumConnection<em>The connection type for PhotoAlbum.</em></a><li></ul>
+<ul class="require-by"><li><a href="feature.doc.html" title="Feature - 班级简介">Feature<em>班级简介</em></a><li><li><a href="featureinput.doc.html" title="FeatureInput - ">FeatureInput<em>null</em></a><li></ul>
 </section>
     </main>
     <footer><div class="slds-col-rule--top slds-p-around--large slds-section-title--divider">
