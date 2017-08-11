@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
-    <title>StaticClass</title>
+    <title>CourseAttributes</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./assets/code.css" /><link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
 </head>
 <body class="slds-scrollable--y">
@@ -125,7 +125,7 @@
                 <code>CommentEdge</code>
             </a>
         </li>
-        <li  title="CourseAttributes">
+        <li class="slds-is-active" title="CourseAttributes">
             <a href="courseattributes.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 <code>CourseAttributes</code>
             </a>
@@ -210,7 +210,7 @@
                 <code>SchoolAbilityConfig</code>
             </a>
         </li>
-        <li class="slds-is-active" title="StaticClass">
+        <li  title="StaticClass">
             <a href="staticclass.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 <code>StaticClass</code>
             </a>
@@ -340,17 +340,17 @@
             </div>
         </div>
 <section class="title">
-    <h1 class="slds-text-heading--large"><code>StaticClass</code></h1>
-    <div class="gdoc-text--introduction slds-m-top--small slds-m-bottom--x-large"><p>固定班</p>
+    <h1 class="slds-text-heading--large"><code>CourseAttributes</code></h1>
+    <div class="gdoc-text--introduction slds-m-top--small slds-m-bottom--x-large"><p>课程数据</p>
 </div>
 </section>
 <section>
 <h2 class="slds-section__title slds-m-top--small">GraphQL Schema definition</h3>
-<code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">StaticClass</span> {</li><li></li><li><span class="tab"><span class="meta">className</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="meta">grade</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="id.doc.html">ID</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   班主任</span></span></li><li><span class="tab"><span class="meta">teacher</span>: <a class="support type" href="teacher.doc.html">Teacher</a> </span></li><li>}</li></ul></code>
+<code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">CourseAttributes</span> {</li><li></li><li><span class="tab"><span class="comment line">#   上课班级名称</span></span></li><li><span class="tab"><span class="meta">className</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   课程名称</span></span></li><li><span class="tab"><span class="meta">courseName</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   课程类型:["static", "dynamic"]</span></span></li><li><span class="tab"><span class="meta">courseType</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   课程结束时间</span></span></li><li><span class="tab"><span class="meta">endAt</span>: <a class="support type" href="datetime.doc.html">Datetime</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   课程节次</span></span></li><li><span class="tab"><span class="meta">scheduleNo</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   课程开始时间</span></span></li><li><span class="tab"><span class="meta">startAt</span>: <a class="support type" href="datetime.doc.html">Datetime</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   授课老师姓名</span></span></li><li><span class="tab"><span class="meta">teacherName</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li>}</li></ul></code>
 </section>
 <section>
 <h2 class="slds-section__title slds-m-top--small">Require by</h3>
-<ul class="require-by"><li><a href="school.doc.html" title="School - 学校">School<em>学校</em></a><li><li><a href="student.doc.html" title="Student - 学生">Student<em>学生</em></a><li><li><a href="wxaschoolquery.doc.html" title="WxaSchoolQuery - ">WxaSchoolQuery<em>null</em></a><li></ul>
+<ul class="require-by"><li><a href="courseschedules.doc.html" title="CourseSchedules - 课程列表">CourseSchedules<em>课程列表</em></a><li></ul>
 </section>
     </main>
     <footer><div class="slds-col-rule--top slds-p-around--large slds-section-title--divider">
