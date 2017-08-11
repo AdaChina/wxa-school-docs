@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
-    <title>__Schema</title>
+    <title>ClientNotiEdge</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./assets/code.css" /><link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
 </head>
 <body class="slds-scrollable--y">
@@ -115,7 +115,7 @@
                 <code>ClientNotiConnection</code>
             </a>
         </li>
-        <li  title="ClientNotiEdge">
+        <li class="slds-is-active" title="ClientNotiEdge">
             <a href="clientnotiedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 <code>ClientNotiEdge</code>
             </a>
@@ -260,7 +260,7 @@
                 <code>__InputValue</code>
             </a>
         </li>
-        <li class="slds-is-active" title="__Schema">
+        <li  title="__Schema">
             <a href="schema.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 <code>__Schema</code>
             </a>
@@ -350,17 +350,17 @@
             </div>
         </div>
 <section class="title">
-    <h1 class="slds-text-heading--large"><code>__Schema</code></h1>
-    <div class="gdoc-text--introduction slds-m-top--small slds-m-bottom--x-large"><p>A GraphQL Schema defines the capabilities of a GraphQL server. It exposes all available types and directives on the server, as well as the entry points for query, mutation, and subscription operations.</p>
+    <h1 class="slds-text-heading--large"><code>ClientNotiEdge</code></h1>
+    <div class="gdoc-text--introduction slds-m-top--small slds-m-bottom--x-large"><p>An edge in a connection.</p>
 </div>
 </section>
 <section>
 <h2 class="slds-section__title slds-m-top--small">GraphQL Schema definition</h3>
-<code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">__Schema</span> {</li><li></li><li><span class="tab"><span class="comment line">#   A list of all directives supported by this server.</span></span></li><li><span class="tab"><span class="meta">directives</span>: [<a class="support type" href="directive.spec.html">__Directive</a>!]! </span></li><li></li><li><span class="tab"><span class="comment line">#   If this server supports mutation, the type that mutation operations will be </span></span></li><li><span class="tab"><span class="comment line">#   rooted at.</span></span></li><li><span class="tab"><span class="meta">mutationType</span>: <a class="support type" href="type.spec.html">__Type</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The type that query operations will be rooted at.</span></span></li><li><span class="tab"><span class="meta">queryType</span>: <a class="support type" href="type.spec.html">__Type</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   If this server support subscription, the type that subscription operations will </span></span></li><li><span class="tab"><span class="comment line">#   be rooted at.</span></span></li><li><span class="tab"><span class="meta">subscriptionType</span>: <a class="support type" href="type.spec.html">__Type</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   A list of all types supported by this server.</span></span></li><li><span class="tab"><span class="meta">types</span>: [<a class="support type" href="type.spec.html">__Type</a>!]! </span></li><li>}</li></ul></code>
+<code class="highlight"><ul class="code" style="padding-left:28px"><li><span class="keyword operator ts">type</span> <span class="identifier">ClientNotiEdge</span> {</li><li></li><li><span class="tab"><span class="comment line">#   A cursor for use in pagination.</span></span></li><li><span class="tab"><span class="meta">cursor</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The item at the end of the edge.</span></span></li><li><span class="tab"><span class="meta">node</span>: <a class="support type" href="clientnoti.doc.html">ClientNoti</a> </span></li><li>}</li></ul></code>
 </section>
 <section>
 <h2 class="slds-section__title slds-m-top--small">Require by</h3>
-<div class="require-by anyone">This element is not required by anyone</div>
+<ul class="require-by"><li><a href="clientnoticonnection.doc.html" title="ClientNotiConnection - The connection type for ClientNoti.">ClientNotiConnection<em>The connection type for ClientNoti.</em></a><li></ul>
 </section>
     </main>
     <footer><div class="slds-col-rule--top slds-p-around--large slds-section-title--divider">

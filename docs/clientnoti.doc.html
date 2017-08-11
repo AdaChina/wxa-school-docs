@@ -110,6 +110,16 @@
                 <code>ClientNoti</code>
             </a>
         </li>
+        <li  title="ClientNotiConnection">
+            <a href="clientnoticonnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                <code>ClientNotiConnection</code>
+            </a>
+        </li>
+        <li  title="ClientNotiEdge">
+            <a href="clientnotiedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                <code>ClientNotiEdge</code>
+            </a>
+        </li>
         <li  title="Comment">
             <a href="comment.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 <code>Comment</code>
@@ -346,11 +356,11 @@
 </section>
 <section>
 <h2 class="slds-section__title slds-m-top--small">GraphQL Schema definition</h3>
-<code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">ClientNoti</span> {</li><li></li><li><span class="tab"><span class="comment line">#   内容</span></span></li><li><span class="tab"><span class="meta">content</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="meta">createdAt</span>: <a class="support type" href="datetime.doc.html">Datetime</a>! </span></li><li></li><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="id.doc.html">ID</a>! </span></li><li></li><li><span class="tab"><span class="meta">imageUrl</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li>}</li></ul></code>
+<code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">ClientNoti</span> {</li><li></li><li><span class="tab"><span class="comment line">#   内容</span></span></li><li><span class="tab"><span class="meta">content</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="meta">createdAt</span>: <a class="support type" href="datetime.doc.html">Datetime</a>! </span></li><li></li><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="id.doc.html">ID</a>! </span></li><li></li><li><span class="tab"><span class="meta">imageUrl</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   回执数量</span></span></li><li><span class="tab"><span class="meta">recepitsCount</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   未读人数</span></span></li><li><span class="tab"><span class="meta">unreadCount</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="meta">unread_student_parents</span>: [<a class="support type" href="student.doc.html">Student</a>]! </span></li><li>}</li></ul></code>
 </section>
 <section>
 <h2 class="slds-section__title slds-m-top--small">Require by</h3>
-<ul class="require-by"><li><a href="wxaschoolmutation.doc.html" title="WxaSchoolMutation - ">WxaSchoolMutation<em>null</em></a><li></ul>
+<ul class="require-by"><li><a href="clientnotiedge.doc.html" title="ClientNotiEdge - An edge in a connection.">ClientNotiEdge<em>An edge in a connection.</em></a><li><li><a href="wxaschoolmutation.doc.html" title="WxaSchoolMutation - ">WxaSchoolMutation<em>null</em></a><li></ul>
 </section>
     </main>
     <footer><div class="slds-col-rule--top slds-p-around--large slds-section-title--divider">
