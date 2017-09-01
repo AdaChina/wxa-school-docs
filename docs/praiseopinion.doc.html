@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
-    <title>Date</title>
+    <title>PraiseOpinion</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./assets/code.css" /><link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
 </head>
 <body class="slds-scrollable--y">
@@ -45,7 +45,7 @@
                 <code>Boolean</code>
             </a>
         </li>
-        <li class="slds-is-active" title="Date">
+        <li  title="Date">
             <a href="date.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 <code>Date</code>
             </a>
@@ -215,7 +215,7 @@
                 <code>PraiseEdge</code>
             </a>
         </li>
-        <li  title="PraiseOpinion">
+        <li class="slds-is-active" title="PraiseOpinion">
             <a href="praiseopinion.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 <code>PraiseOpinion</code>
             </a>
@@ -360,17 +360,17 @@
             </div>
         </div>
 <section class="title">
-    <h1 class="slds-text-heading--large"><code>Date</code></h1>
-    <div class="gdoc-text--introduction slds-m-top--small slds-m-bottom--x-large"><p>日期类型,为iso8601字符串</p>
+    <h1 class="slds-text-heading--large"><code>PraiseOpinion</code></h1>
+    <div class="gdoc-text--introduction slds-m-top--small slds-m-bottom--x-large"><p>班级表彰家长意见</p>
 </div>
 </section>
 <section>
 <h2 class="slds-section__title slds-m-top--small">GraphQL Schema definition</h3>
-<code class="highlight"><ul class="code" style="padding-left:28px"><li><span class="keyword operator ts">scalar</span> <span class="identifier">Date</span></li></ul></code>
+<code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">PraiseOpinion</span> {</li><li></li><li><span class="tab"><span class="comment line">#   家长头像url</span></span></li><li><span class="tab"><span class="meta">avatarUrl</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   家长意见内容</span></span></li><li><span class="tab"><span class="meta">content</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   意见提交日期</span></span></li><li><span class="tab"><span class="meta">createdAt</span>: <a class="support type" href="datetime.doc.html">Datetime</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   家长显示名称</span></span></li><li><span class="tab"><span class="meta">name</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li>}</li></ul></code>
 </section>
 <section>
 <h2 class="slds-section__title slds-m-top--small">Require by</h3>
-<ul class="require-by"><li><a href="courseschedules.doc.html" title="CourseSchedules - 课程列表">CourseSchedules<em>课程列表</em></a><li><li><a href="photoalbum.doc.html" title="PhotoAlbum - 班级故事">PhotoAlbum<em>班级故事</em></a><li><li><a href="photoalbuminput.doc.html" title="PhotoAlbumInput - ">PhotoAlbumInput<em>null</em></a><li><li><a href="student.doc.html" title="Student - 学生">Student<em>学生</em></a><li><li><a href="term.doc.html" title="Term - 学期">Term<em>学期</em></a><li><li><a href="updatephotoalbuminput.doc.html" title="UpdatePhotoAlbumInput - ">UpdatePhotoAlbumInput<em>null</em></a><li></ul>
+<ul class="require-by"><li><a href="praise.doc.html" title="Praise - 班级表彰">Praise<em>班级表彰</em></a><li></ul>
 </section>
     </main>
     <footer><div class="slds-col-rule--top slds-p-around--large slds-section-title--divider">
