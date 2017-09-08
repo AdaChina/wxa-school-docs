@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
-    <title>__EnumValue</title>
+    <title>ShareableEnum</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./assets/code.css" /><link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
 </head>
 <body class="slds-scrollable--y">
@@ -90,7 +90,7 @@
                 <code>LikeableEnum</code>
             </a>
         </li>
-        <li  title="ShareableEnum">
+        <li class="slds-is-active" title="ShareableEnum">
             <a href="shareableenum.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 <code>ShareableEnum</code>
             </a>
@@ -265,7 +265,7 @@
                 <code>__Directive</code>
             </a>
         </li>
-        <li class="slds-is-active" title="__EnumValue">
+        <li  title="__EnumValue">
             <a href="enumvalue.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 <code>__EnumValue</code>
             </a>
@@ -370,21 +370,17 @@
             </div>
         </div>
 <section class="title">
-    <h1 class="slds-text-heading--large"><code>__EnumValue</code></h1>
-    <div class="gdoc-text--introduction slds-m-top--small slds-m-bottom--x-large"><p>One possible value for a given Enum. Enum values are unique values, not a placeholder for a string or numeric value. However an Enum value is returned in a JSON response as a string.</p>
+    <h1 class="slds-text-heading--large"><code>ShareableEnum</code></h1>
+    <div class="gdoc-text--introduction slds-m-top--small slds-m-bottom--x-large"><p>可分享资源类型</p>
 </div>
 </section>
 <section>
 <h2 class="slds-section__title slds-m-top--small">GraphQL Schema definition</h3>
-<code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">__EnumValue</span> {</li><li></li><li><span class="tab"><span class="meta">deprecationReason</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="meta">description</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="meta">isDeprecated</span>: <a class="support type" href="boolean.doc.html">Boolean</a>! </span></li><li></li><li><span class="tab"><span class="meta">name</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li>}</li></ul></code>
+<code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">enum</span> <span class="identifier">ShareableEnum</span> {</li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   班级简介</span></span></li><li><span class="tab"><span class="meta">feature</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   照片</span></span></li><li><span class="tab"><span class="meta">photo</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   表彰</span></span></li><li><span class="tab"><span class="meta">praise</span></span></li><li>}</li></ul></code>
 </section>
 <section>
 <h2 class="slds-section__title slds-m-top--small">Require by</h3>
-<ul class="require-by"><li><a href="type.spec.html" title="__Type - The fundamental unit of any GraphQL Schema is the type. There are many kinds of types in GraphQL as represented by the `__TypeKind` enum.
-
-Depending on the kind of a type, certain fields describe information about that type. Scalar types provide no information beyond a name and description, while Enum types provide their values. Object and Interface types provide the fields they describe. Abstract types, Union and Interface, provide the Object types possible at runtime. List and NonNull types compose other types.">__Type<em>The fundamental unit of any GraphQL Schema is the type. There are many kinds of types in GraphQL as represented by the `__TypeKind` enum.
-
-Depending on the kind of a type, certain fields describe information about that type. Scalar types provide no information beyond a name and description, while Enum types provide their values. Object and Interface types provide the fields they describe. Abstract types, Union and Interface, provide the Object types possible at runtime. List and NonNull types compose other types.</em></a><li></ul>
+<ul class="require-by"><li><a href="wxaschoolquery.doc.html" title="WxaSchoolQuery - ">WxaSchoolQuery<em>null</em></a><li></ul>
 </section>
     </main>
     <footer><div class="slds-col-rule--top slds-p-around--large slds-section-title--divider">
