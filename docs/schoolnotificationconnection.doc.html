@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
-    <title>Student</title>
+    <title>SchoolNotificationConnection</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./assets/code.css" /><link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
 </head>
 <body class="slds-scrollable--y">
@@ -255,7 +255,7 @@
                 <code>SchoolNotification</code>
             </a>
         </li>
-        <li  title="SchoolNotificationConnection">
+        <li class="slds-is-active" title="SchoolNotificationConnection">
             <a href="schoolnotificationconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 <code>SchoolNotificationConnection</code>
             </a>
@@ -270,7 +270,7 @@
                 <code>StaticClass</code>
             </a>
         </li>
-        <li class="slds-is-active" title="Student">
+        <li  title="Student">
             <a href="student.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 <code>Student</code>
             </a>
@@ -395,17 +395,17 @@
             </div>
         </div>
 <section class="title">
-    <h1 class="slds-text-heading--large"><code>Student</code></h1>
-    <div class="gdoc-text--introduction slds-m-top--small slds-m-bottom--x-large"><p>学生</p>
+    <h1 class="slds-text-heading--large"><code>SchoolNotificationConnection</code></h1>
+    <div class="gdoc-text--introduction slds-m-top--small slds-m-bottom--x-large"><p>The connection type for SchoolNotification.</p>
 </div>
 </section>
 <section>
 <h2 class="slds-section__title slds-m-top--small">GraphQL Schema definition</h3>
-<code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">Student</span> {</li><li></li><li><span class="tab"><span class="meta">avatarUrl</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="meta">birthday</span>: <a class="support type" href="date.doc.html">Date</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   性别: ["男", "女"]</span></span></li><li><span class="tab"><span class="meta">gender</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="id.doc.html">ID</a>! </span></li><li></li><li><span class="tab"><span class="meta">name</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   学号</span></span></li><li><span class="tab"><span class="meta">number</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   学生所在学校</span></span></li><li><span class="tab"><span class="meta">school</span>: <a class="support type" href="school.doc.html">School</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   学生所在班级</span></span></li><li><span class="tab"><span class="meta">staticClass</span>: <a class="support type" href="staticclass.doc.html">StaticClass</a> </span></li><li>}</li></ul></code>
+<code class="highlight"><ul class="code" style="padding-left:28px"><li><span class="keyword operator ts">type</span> <span class="identifier">SchoolNotificationConnection</span> {</li><li></li><li><span class="tab"><span class="comment line">#   A list of edges.</span></span></li><li><span class="tab"><span class="meta">edges</span>: [<a class="support type" href="schoolnotificationedge.doc.html">SchoolNotificationEdge</a>] </span></li><li></li><li><span class="tab"><span class="comment line">#   Information to aid in pagination.</span></span></li><li><span class="tab"><span class="meta">pageInfo</span>: <a class="support type" href="pageinfo.doc.html">PageInfo</a>! </span></li><li>}</li></ul></code>
 </section>
 <section>
 <h2 class="slds-section__title slds-m-top--small">Require by</h3>
-<ul class="require-by"><li><a href="clientnoti.doc.html" title="ClientNoti - 通知">ClientNoti<em>通知</em></a><li><li><a href="wxaschoolquery.doc.html" title="WxaSchoolQuery - ">WxaSchoolQuery<em>null</em></a><li></ul>
+<ul class="require-by"><li><a href="wxaschoolquery.doc.html" title="WxaSchoolQuery - ">WxaSchoolQuery<em>null</em></a><li></ul>
 </section>
     </main>
     <footer><div class="slds-col-rule--top slds-p-around--large slds-section-title--divider">
