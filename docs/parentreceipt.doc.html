@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
-    <title>PhotoAlbum</title>
+    <title>ParentReceipt</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./assets/code.css" /><link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
 </head>
 <body class="slds-scrollable--y">
@@ -205,7 +205,7 @@
                 PageInfo
             </a>
         </li>
-        <li  title="ParentReceipt">
+        <li class="slds-is-active" title="ParentReceipt">
             <a href="parentreceipt.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 ParentReceipt
             </a>
@@ -215,7 +215,7 @@
                 Photo
             </a>
         </li>
-        <li class="slds-is-active" title="PhotoAlbum">
+        <li  title="PhotoAlbum">
             <a href="photoalbum.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 PhotoAlbum
             </a>
@@ -421,8 +421,8 @@
     </div>
     <div class="container">
         <p class="slds-text-title--caps slds-text-color--weak">OBJECT</p>
-        <h1 class="slds-text-heading--large">PhotoAlbum</h1>
-        <div class="slds-text-body--regular"><p>班级故事</p>
+        <h1 class="slds-text-heading--large">ParentReceipt</h1>
+        <div class="slds-text-body--regular"><p>家长回执</p>
 </div>
     </div>
 </section>
@@ -434,7 +434,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">PhotoAlbum</span> {</li><li></li><li><span class="tab"><span class="meta">date</span>: <a class="support type" href="date.doc.html">Date</a>! </span></li><li></li><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="id.doc.html">ID</a>! </span></li><li></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>first</strong>: Returns the first _n_ elements from the list.</span></span></li><li><span class="tab"><span class="comment line">#   <strong>after</strong>: Returns the elements in the list that come after the </span></span></li><li><span class="tab"><span class="comment line">#   specified global ID.</span></span></li><li><span class="tab"><span class="comment line">#   <strong>last</strong>: Returns the last _n_ elements from the list.</span></span></li><li><span class="tab"><span class="comment line">#   <strong>before</strong>: Returns the elements in the list that come before the </span></span></li><li><span class="tab"><span class="comment line">#   specified global ID.</span></span></li><li><span class="tab"><span class="meta">photos</span>(<span class="meta">first</span>: <a class="support type" href="int.doc.html">Int</a>, <span class="meta">after</span>: <a class="support type" href="string.doc.html">String</a>, <span class="meta">last</span>: <a class="support type" href="int.doc.html">Int</a>, <span class="meta">before</span>: <a class="support type" href="string.doc.html">String</a>): <a class="support type" href="photoconnection.doc.html">PhotoConnection</a> </span></li><li></li><li><span class="tab"><span class="meta">photosCount</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="meta">title</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="meta">unpublishedPhotosCount</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:28px"><li><span class="keyword operator ts">type</span> <span class="identifier">ParentReceipt</span> {</li><li></li><li><span class="tab"><span class="comment line">#   回执创建时间</span></span></li><li><span class="tab"><span class="meta">createdAt</span>: <a class="support type" href="datetime.doc.html">Datetime</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   已读通知学生</span></span></li><li><span class="tab"><span class="meta">student</span>: <a class="support type" href="student.doc.html">Student</a> </span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>
@@ -445,7 +445,7 @@
             </a>
             Require by
         </h2>
-        <ul class="require-by"><li><a href="photoalbumedge.doc.html" title="PhotoAlbumEdge - An edge in a connection.">PhotoAlbumEdge<em>An edge in a connection.</em></a><li><li><a href="wxaschoolmutation.doc.html" title="WxaSchoolMutation - ">WxaSchoolMutation<em>null</em></a><li></ul>
+        <ul class="require-by"><li><a href="clientnoti.doc.html" title="ClientNoti - 通知">ClientNoti<em>通知</em></a><li></ul>
     </div>
 </section>
 <footer>
