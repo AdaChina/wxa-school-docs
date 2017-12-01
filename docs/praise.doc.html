@@ -25,14 +25,14 @@
 <div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
     <h4 class="slds-text-title--caps slds-p-around--medium">Schema</h4>
     <ul>
-        <li  title="WxaSchoolQuery">
-            <a href="wxaschoolquery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                WxaSchoolQuery
+        <li  title="WxaParentQuery">
+            <a href="wxaparentquery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                WxaParentQuery
             </a>
         </li>
-        <li  title="WxaSchoolMutation">
-            <a href="wxaschoolmutation.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                WxaSchoolMutation
+        <li  title="WxaParentMutation">
+            <a href="wxaparentmutation.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                WxaParentMutation
             </a>
         </li>
     </ul>
@@ -95,6 +95,11 @@
                 LikeableEnum
             </a>
         </li>
+        <li  title="PhotoRecordStatusEnum">
+            <a href="photorecordstatusenum.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PhotoRecordStatusEnum
+            </a>
+        </li>
         <li  title="PraiseStyleEnum">
             <a href="praisestyleenum.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 PraiseStyleEnum
@@ -153,11 +158,6 @@
         <li  title="CommentEdge">
             <a href="commentedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 CommentEdge
-            </a>
-        </li>
-        <li  title="CommonUser">
-            <a href="commonuser.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                CommonUser
             </a>
         </li>
         <li  title="CourseAttributes">
@@ -240,9 +240,19 @@
                 PhotoEdge
             </a>
         </li>
-        <li  title="PhotoUploadRank">
-            <a href="photouploadrank.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                PhotoUploadRank
+        <li  title="PhotoRecord">
+            <a href="photorecord.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PhotoRecord
+            </a>
+        </li>
+        <li  title="PhotoRecordConnection">
+            <a href="photorecordconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PhotoRecordConnection
+            </a>
+        </li>
+        <li  title="PhotoRecordEdge">
+            <a href="photorecordedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PhotoRecordEdge
             </a>
         </li>
         <li class="slds-is-active" title="Praise">
@@ -300,6 +310,16 @@
                 Student
             </a>
         </li>
+        <li  title="StudentSignIns">
+            <a href="studentsignins.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                StudentSignIns
+            </a>
+        </li>
+        <li  title="StudentSignInsAttributes">
+            <a href="studentsigninsattributes.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                StudentSignInsAttributes
+            </a>
+        </li>
         <li  title="Teacher">
             <a href="teacher.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 Teacher
@@ -345,44 +365,9 @@
 <div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
     <h4 class="slds-text-title--caps slds-p-around--medium">Input Objects</h4>
     <ul>
-        <li  title="ClientNotiInput">
-            <a href="clientnotiinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                ClientNotiInput
-            </a>
-        </li>
-        <li  title="FeatureInput">
-            <a href="featureinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                FeatureInput
-            </a>
-        </li>
-        <li  title="PhotoAlbumInput">
-            <a href="photoalbuminput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                PhotoAlbumInput
-            </a>
-        </li>
         <li  title="PhotoInput">
             <a href="photoinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 PhotoInput
-            </a>
-        </li>
-        <li  title="PraiseInput">
-            <a href="praiseinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                PraiseInput
-            </a>
-        </li>
-        <li  title="UpdateFeatureInput">
-            <a href="updatefeatureinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                UpdateFeatureInput
-            </a>
-        </li>
-        <li  title="UpdateFeatureOrderInput">
-            <a href="updatefeatureorderinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                UpdateFeatureOrderInput
-            </a>
-        </li>
-        <li  title="UpdatePhotoAlbumInput">
-            <a href="updatephotoalbuminput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                UpdatePhotoAlbumInput
             </a>
         </li>
     </ul>
@@ -445,7 +430,7 @@
             </a>
             Require by
         </h2>
-        <ul class="require-by"><li><a href="praiseedge.doc.html" title="PraiseEdge - An edge in a connection.">PraiseEdge<em>An edge in a connection.</em></a><li><li><a href="wxaschoolmutation.doc.html" title="WxaSchoolMutation - ">WxaSchoolMutation<em>null</em></a><li></ul>
+        <ul class="require-by"><li><a href="praiseedge.doc.html" title="PraiseEdge - An edge in a connection.">PraiseEdge<em>An edge in a connection.</em></a><li><li><a href="wxaparentmutation.doc.html" title="WxaParentMutation - ">WxaParentMutation<em>null</em></a><li></ul>
     </div>
 </section>
 <footer>
