@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
-    <title>ParentReceipt</title>
+    <title>PhotoAlbumInput</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./assets/code.css" /><link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
 </head>
 <body class="slds-scrollable--y">
@@ -205,7 +205,7 @@
                 PageInfo
             </a>
         </li>
-        <li class="slds-is-active" title="ParentReceipt">
+        <li  title="ParentReceipt">
             <a href="parentreceipt.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 ParentReceipt
             </a>
@@ -355,7 +355,7 @@
                 FeatureInput
             </a>
         </li>
-        <li  title="PhotoAlbumInput">
+        <li class="slds-is-active" title="PhotoAlbumInput">
             <a href="photoalbuminput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 PhotoAlbumInput
             </a>
@@ -420,10 +420,9 @@
         </div>
     </div>
     <div class="container">
-        <p class="slds-text-title--caps slds-text-color--weak">OBJECT</p>
-        <h1 class="slds-text-heading--large">ParentReceipt</h1>
-        <div class="slds-text-body--regular"><p>家长回执</p>
-</div>
+        <p class="slds-text-title--caps slds-text-color--weak">INPUT_OBJECT</p>
+        <h1 class="slds-text-heading--large">PhotoAlbumInput</h1>
+        <div class="slds-text-body--regular"></div>
     </div>
 </section>
 <section>
@@ -434,7 +433,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:28px"><li><span class="keyword operator ts">type</span> <span class="identifier">ParentReceipt</span> {</li><li></li><li><span class="tab"><span class="comment line">#   回执创建时间</span></span></li><li><span class="tab"><span class="meta">createdAt</span>: <a class="support type" href="datetime.doc.html">Datetime</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   已读通知学生</span></span></li><li><span class="tab"><span class="meta">student</span>: <a class="support type" href="student.doc.html">Student</a> </span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:28px"><li><span class="keyword operator ts">input</span> <span class="identifier">PhotoAlbumInput</span> {</li><li><span class="tab"><li><span class="tab"><span class="comment line">#   标题</span></span></li><li><span class="tab"><span class="meta">title</span>: <a class="support type" href="string.doc.html">String</a>!</span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   日期</span></span></li><li><span class="tab"><span class="meta">date</span>: <a class="support type" href="date.doc.html">Date</a>!</span></li></span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>
@@ -445,7 +444,7 @@
             </a>
             Require by
         </h2>
-        <ul class="require-by"><li><a href="clientnoti.doc.html" title="ClientNoti - 通知">ClientNoti<em>通知</em></a><li></ul>
+        <ul class="require-by"><li><a href="wxaschoolmutation.doc.html" title="WxaSchoolMutation - ">WxaSchoolMutation<em>null</em></a><li></ul>
     </div>
 </section>
 <footer>

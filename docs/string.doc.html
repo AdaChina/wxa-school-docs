@@ -25,14 +25,14 @@
 <div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
     <h4 class="slds-text-title--caps slds-p-around--medium">Schema</h4>
     <ul>
-        <li  title="WxaParentQuery">
-            <a href="wxaparentquery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                WxaParentQuery
+        <li  title="WxaSchoolQuery">
+            <a href="wxaschoolquery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                WxaSchoolQuery
             </a>
         </li>
-        <li  title="WxaParentMutation">
-            <a href="wxaparentmutation.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                WxaParentMutation
+        <li  title="WxaSchoolMutation">
+            <a href="wxaschoolmutation.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                WxaSchoolMutation
             </a>
         </li>
     </ul>
@@ -95,11 +95,6 @@
                 LikeableEnum
             </a>
         </li>
-        <li  title="PhotoRecordStatusEnum">
-            <a href="photorecordstatusenum.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                PhotoRecordStatusEnum
-            </a>
-        </li>
         <li  title="PraiseStyleEnum">
             <a href="praisestyleenum.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 PraiseStyleEnum
@@ -158,6 +153,11 @@
         <li  title="CommentEdge">
             <a href="commentedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 CommentEdge
+            </a>
+        </li>
+        <li  title="CommonUser">
+            <a href="commonuser.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                CommonUser
             </a>
         </li>
         <li  title="CourseAttributes">
@@ -240,19 +240,9 @@
                 PhotoEdge
             </a>
         </li>
-        <li  title="PhotoRecord">
-            <a href="photorecord.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                PhotoRecord
-            </a>
-        </li>
-        <li  title="PhotoRecordConnection">
-            <a href="photorecordconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                PhotoRecordConnection
-            </a>
-        </li>
-        <li  title="PhotoRecordEdge">
-            <a href="photorecordedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                PhotoRecordEdge
+        <li  title="PhotoUploadRank">
+            <a href="photouploadrank.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PhotoUploadRank
             </a>
         </li>
         <li  title="Praise">
@@ -310,16 +300,6 @@
                 Student
             </a>
         </li>
-        <li  title="StudentSignIns">
-            <a href="studentsignins.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                StudentSignIns
-            </a>
-        </li>
-        <li  title="StudentSignInsAttributes">
-            <a href="studentsigninsattributes.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                StudentSignInsAttributes
-            </a>
-        </li>
         <li  title="Teacher">
             <a href="teacher.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 Teacher
@@ -365,9 +345,44 @@
 <div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
     <h4 class="slds-text-title--caps slds-p-around--medium">Input Objects</h4>
     <ul>
+        <li  title="ClientNotiInput">
+            <a href="clientnotiinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ClientNotiInput
+            </a>
+        </li>
+        <li  title="FeatureInput">
+            <a href="featureinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                FeatureInput
+            </a>
+        </li>
+        <li  title="PhotoAlbumInput">
+            <a href="photoalbuminput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PhotoAlbumInput
+            </a>
+        </li>
         <li  title="PhotoInput">
             <a href="photoinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 PhotoInput
+            </a>
+        </li>
+        <li  title="PraiseInput">
+            <a href="praiseinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PraiseInput
+            </a>
+        </li>
+        <li  title="UpdateFeatureInput">
+            <a href="updatefeatureinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UpdateFeatureInput
+            </a>
+        </li>
+        <li  title="UpdateFeatureOrderInput">
+            <a href="updatefeatureorderinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UpdateFeatureOrderInput
+            </a>
+        </li>
+        <li  title="UpdatePhotoAlbumInput">
+            <a href="updatephotoalbuminput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UpdatePhotoAlbumInput
             </a>
         </li>
     </ul>
@@ -430,7 +445,7 @@
             </a>
             Require by
         </h2>
-        <ul class="require-by"><li><a href="clientnoti.doc.html" title="ClientNoti - 通知">ClientNoti<em>通知</em></a><li><li><a href="clientnotiedge.doc.html" title="ClientNotiEdge - An edge in a connection.">ClientNotiEdge<em>An edge in a connection.</em></a><li><li><a href="comment.doc.html" title="Comment - 评论">Comment<em>评论</em></a><li><li><a href="commentedge.doc.html" title="CommentEdge - An edge in a connection.">CommentEdge<em>An edge in a connection.</em></a><li><li><a href="courseattributes.doc.html" title="CourseAttributes - 课程数据">CourseAttributes<em>课程数据</em></a><li><li><a href="feature.doc.html" title="Feature - 班级简介">Feature<em>班级简介</em></a><li><li><a href="featureedge.doc.html" title="FeatureEdge - An edge in a connection.">FeatureEdge<em>An edge in a connection.</em></a><li><li><a href="feed.doc.html" title="Feed - 资讯">Feed<em>资讯</em></a><li><li><a href="feededge.doc.html" title="FeedEdge - An edge in a connection.">FeedEdge<em>An edge in a connection.</em></a><li><li><a href="pageinfo.doc.html" title="PageInfo - Information about pagination in a connection.">PageInfo<em>Information about pagination in a connection.</em></a><li><li><a href="photo.doc.html" title="Photo - 班级相册照片">Photo<em>班级相册照片</em></a><li><li><a href="photoalbum.doc.html" title="PhotoAlbum - 班级故事">PhotoAlbum<em>班级故事</em></a><li><li><a href="photoalbumedge.doc.html" title="PhotoAlbumEdge - An edge in a connection.">PhotoAlbumEdge<em>An edge in a connection.</em></a><li><li><a href="photoedge.doc.html" title="PhotoEdge - An edge in a connection.">PhotoEdge<em>An edge in a connection.</em></a><li><li><a href="photoinput.doc.html" title="PhotoInput - ">PhotoInput<em>null</em></a><li><li><a href="photorecord.doc.html" title="PhotoRecord - 家长上传照片记录">PhotoRecord<em>家长上传照片记录</em></a><li><li><a href="photorecordedge.doc.html" title="PhotoRecordEdge - An edge in a connection.">PhotoRecordEdge<em>An edge in a connection.</em></a><li><li><a href="praise.doc.html" title="Praise - 班级表彰">Praise<em>班级表彰</em></a><li><li><a href="praiseedge.doc.html" title="PraiseEdge - An edge in a connection.">PraiseEdge<em>An edge in a connection.</em></a><li><li><a href="praiseopinion.doc.html" title="PraiseOpinion - 班级表彰家长意见">PraiseOpinion<em>班级表彰家长意见</em></a><li><li><a href="school.doc.html" title="School - 学校">School<em>学校</em></a><li><li><a href="schoolnotification.doc.html" title="SchoolNotification - 通知">SchoolNotification<em>通知</em></a><li><li><a href="schoolnotificationedge.doc.html" title="SchoolNotificationEdge - An edge in a connection.">SchoolNotificationEdge<em>An edge in a connection.</em></a><li><li><a href="staticclass.doc.html" title="StaticClass - 固定班">StaticClass<em>固定班</em></a><li><li><a href="student.doc.html" title="Student - 学生">Student<em>学生</em></a><li><li><a href="studentsignins.doc.html" title="StudentSignIns - 学生签到日期信息">StudentSignIns<em>学生签到日期信息</em></a><li><li><a href="studentsigninsattributes.doc.html" title="StudentSignInsAttributes - 学生签到详细信息">StudentSignInsAttributes<em>学生签到详细信息</em></a><li><li><a href="teacher.doc.html" title="Teacher - 老师">Teacher<em>老师</em></a><li><li><a href="term.doc.html" title="Term - 学期">Term<em>学期</em></a><li><li><a href="wxaparentmutation.doc.html" title="WxaParentMutation - ">WxaParentMutation<em>null</em></a><li><li><a href="wxaparentquery.doc.html" title="WxaParentQuery - ">WxaParentQuery<em>null</em></a><li><li><a href="directive.spec.html" title="__Directive - A Directive provides a way to describe alternate runtime execution and type validation behavior in a GraphQL document.
+        <ul class="require-by"><li><a href="clientnoti.doc.html" title="ClientNoti - 通知">ClientNoti<em>通知</em></a><li><li><a href="clientnotiedge.doc.html" title="ClientNotiEdge - An edge in a connection.">ClientNotiEdge<em>An edge in a connection.</em></a><li><li><a href="clientnotiinput.doc.html" title="ClientNotiInput - ">ClientNotiInput<em>null</em></a><li><li><a href="comment.doc.html" title="Comment - 评论">Comment<em>评论</em></a><li><li><a href="commentedge.doc.html" title="CommentEdge - An edge in a connection.">CommentEdge<em>An edge in a connection.</em></a><li><li><a href="commonuser.doc.html" title="CommonUser - 班级管理老师账号">CommonUser<em>班级管理老师账号</em></a><li><li><a href="courseattributes.doc.html" title="CourseAttributes - 课程数据">CourseAttributes<em>课程数据</em></a><li><li><a href="feature.doc.html" title="Feature - 班级简介">Feature<em>班级简介</em></a><li><li><a href="featureedge.doc.html" title="FeatureEdge - An edge in a connection.">FeatureEdge<em>An edge in a connection.</em></a><li><li><a href="featureinput.doc.html" title="FeatureInput - ">FeatureInput<em>null</em></a><li><li><a href="feed.doc.html" title="Feed - 资讯">Feed<em>资讯</em></a><li><li><a href="feededge.doc.html" title="FeedEdge - An edge in a connection.">FeedEdge<em>An edge in a connection.</em></a><li><li><a href="pageinfo.doc.html" title="PageInfo - Information about pagination in a connection.">PageInfo<em>Information about pagination in a connection.</em></a><li><li><a href="photo.doc.html" title="Photo - 班级相册照片">Photo<em>班级相册照片</em></a><li><li><a href="photoalbum.doc.html" title="PhotoAlbum - 班级故事">PhotoAlbum<em>班级故事</em></a><li><li><a href="photoalbumedge.doc.html" title="PhotoAlbumEdge - An edge in a connection.">PhotoAlbumEdge<em>An edge in a connection.</em></a><li><li><a href="photoalbuminput.doc.html" title="PhotoAlbumInput - ">PhotoAlbumInput<em>null</em></a><li><li><a href="photoedge.doc.html" title="PhotoEdge - An edge in a connection.">PhotoEdge<em>An edge in a connection.</em></a><li><li><a href="photoinput.doc.html" title="PhotoInput - ">PhotoInput<em>null</em></a><li><li><a href="photouploadrank.doc.html" title="PhotoUploadRank - 照片上传记录">PhotoUploadRank<em>照片上传记录</em></a><li><li><a href="praise.doc.html" title="Praise - 班级表彰">Praise<em>班级表彰</em></a><li><li><a href="praiseedge.doc.html" title="PraiseEdge - An edge in a connection.">PraiseEdge<em>An edge in a connection.</em></a><li><li><a href="praiseinput.doc.html" title="PraiseInput - ">PraiseInput<em>null</em></a><li><li><a href="praiseopinion.doc.html" title="PraiseOpinion - 班级表彰家长意见">PraiseOpinion<em>班级表彰家长意见</em></a><li><li><a href="school.doc.html" title="School - 学校">School<em>学校</em></a><li><li><a href="schoolnotification.doc.html" title="SchoolNotification - 通知">SchoolNotification<em>通知</em></a><li><li><a href="schoolnotificationedge.doc.html" title="SchoolNotificationEdge - An edge in a connection.">SchoolNotificationEdge<em>An edge in a connection.</em></a><li><li><a href="staticclass.doc.html" title="StaticClass - 固定班">StaticClass<em>固定班</em></a><li><li><a href="student.doc.html" title="Student - 学生">Student<em>学生</em></a><li><li><a href="teacher.doc.html" title="Teacher - 老师">Teacher<em>老师</em></a><li><li><a href="term.doc.html" title="Term - 学期">Term<em>学期</em></a><li><li><a href="updatefeatureinput.doc.html" title="UpdateFeatureInput - ">UpdateFeatureInput<em>null</em></a><li><li><a href="updatephotoalbuminput.doc.html" title="UpdatePhotoAlbumInput - ">UpdatePhotoAlbumInput<em>null</em></a><li><li><a href="wxaschoolmutation.doc.html" title="WxaSchoolMutation - ">WxaSchoolMutation<em>null</em></a><li><li><a href="wxaschoolquery.doc.html" title="WxaSchoolQuery - ">WxaSchoolQuery<em>null</em></a><li><li><a href="directive.spec.html" title="__Directive - A Directive provides a way to describe alternate runtime execution and type validation behavior in a GraphQL document.
 
 In some cases, you need to provide options to alter GraphQL's execution behavior in ways field arguments will not suffice, such as conditionally including or skipping a field. Directives provide this by describing additional information to the executor.">__Directive<em>A Directive provides a way to describe alternate runtime execution and type validation behavior in a GraphQL document.
 
