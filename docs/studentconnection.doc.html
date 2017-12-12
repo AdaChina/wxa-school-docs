@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
-    <title>FeatureInput</title>
+    <title>StudentConnection</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./assets/code.css" /><link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
 </head>
 <body class="slds-scrollable--y">
@@ -300,7 +300,7 @@
                 Student
             </a>
         </li>
-        <li  title="StudentConnection">
+        <li class="slds-is-active" title="StudentConnection">
             <a href="studentconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 StudentConnection
             </a>
@@ -360,7 +360,7 @@
                 ClientNotiInput
             </a>
         </li>
-        <li class="slds-is-active" title="FeatureInput">
+        <li  title="FeatureInput">
             <a href="featureinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 FeatureInput
             </a>
@@ -430,9 +430,10 @@
         </div>
     </div>
     <div class="container">
-        <p class="slds-text-title--caps slds-text-color--weak">INPUT_OBJECT</p>
-        <h1 class="slds-text-heading--large">FeatureInput</h1>
-        <div class="slds-text-body--regular"></div>
+        <p class="slds-text-title--caps slds-text-color--weak">OBJECT</p>
+        <h1 class="slds-text-heading--large">StudentConnection</h1>
+        <div class="slds-text-body--regular"><p>The connection type for Student.</p>
+</div>
     </div>
 </section>
 <section>
@@ -443,7 +444,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">input</span> <span class="identifier">FeatureInput</span> {</li><li><span class="tab"><li><span class="tab"><span class="comment line">#   标题</span></span></li><li><span class="tab"><span class="meta">title</span>: <a class="support type" href="string.doc.html">String</a>!</span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   描述</span></span></li><li><span class="tab"><span class="meta">description</span>: <a class="support type" href="string.doc.html">String</a></span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   风格</span></span></li><li><span class="tab"><span class="meta">style</span>: <a class="support type" href="featurestyleenum.doc.html">FeatureStyleEnum</a>!</span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   图片</span></span></li><li><span class="tab"><span class="meta">image</span>: <a class="support type" href="uploadfile.doc.html">UploadFile</a>!</span></li></span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:28px"><li><span class="keyword operator ts">type</span> <span class="identifier">StudentConnection</span> {</li><li></li><li><span class="tab"><span class="comment line">#   A list of edges.</span></span></li><li><span class="tab"><span class="meta">edges</span>: [<a class="support type" href="studentedge.doc.html">StudentEdge</a>] </span></li><li></li><li><span class="tab"><span class="comment line">#   Information to aid in pagination.</span></span></li><li><span class="tab"><span class="meta">pageInfo</span>: <a class="support type" href="pageinfo.doc.html">PageInfo</a>! </span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>
@@ -454,7 +455,7 @@
             </a>
             Require by
         </h2>
-        <ul class="require-by"><li><a href="wxaschoolmutation.doc.html" title="WxaSchoolMutation - ">WxaSchoolMutation<em>null</em></a><li></ul>
+        <ul class="require-by"><li><a href="praise.doc.html" title="Praise - 班级表彰">Praise<em>班级表彰</em></a><li></ul>
     </div>
 </section>
 <footer>
