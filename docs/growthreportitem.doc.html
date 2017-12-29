@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
-    <title>Feed</title>
+    <title>GrowthReportItem</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./assets/code.css" /><link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
 </head>
 <body class="slds-scrollable--y">
@@ -185,7 +185,7 @@
                 FeatureEdge
             </a>
         </li>
-        <li class="slds-is-active" title="Feed">
+        <li  title="Feed">
             <a href="feed.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 Feed
             </a>
@@ -215,7 +215,7 @@
                 GrowthReportEdge
             </a>
         </li>
-        <li  title="GrowthReportItem">
+        <li class="slds-is-active" title="GrowthReportItem">
             <a href="growthreportitem.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 GrowthReportItem
             </a>
@@ -481,8 +481,8 @@
     </div>
     <div class="container">
         <p class="slds-text-title--caps slds-text-color--weak">OBJECT</p>
-        <h1 class="slds-text-heading--large">Feed</h1>
-        <div class="slds-text-body--regular"><p>资讯</p>
+        <h1 class="slds-text-heading--large">GrowthReportItem</h1>
+        <div class="slds-text-body--regular"><p>成长足迹项</p>
 </div>
     </div>
 </section>
@@ -494,7 +494,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">Feed</span> {</li><li></li><li><span class="tab"><span class="meta">date</span>: <a class="support type" href="date.doc.html">Date</a>! </span></li><li></li><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="id.doc.html">ID</a>! </span></li><li></li><li><span class="tab"><span class="meta">imageUrl</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="meta">newContent</span>: <a class="support type" href="boolean.doc.html">Boolean</a> </span></li><li></li><li><span class="tab"><span class="meta">thumbUrl</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="meta">title</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">GrowthReportItem</span> {</li><li></li><li><span class="tab"><span class="comment line">#   留言内容</span></span></li><li><span class="tab"><span class="meta">comment</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   留言者头像</span></span></li><li><span class="tab"><span class="meta">commenterAvatar</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   留言者名称</span></span></li><li><span class="tab"><span class="meta">commenterName</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   描述</span></span></li><li><span class="tab"><span class="meta">description</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   事件时间</span></span></li><li><span class="tab"><span class="meta">eventDate</span>: <a class="support type" href="date.doc.html">Date</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   图片</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>first</strong>: Returns the first _n_ elements from the list.</span></span></li><li><span class="tab"><span class="comment line">#   <strong>after</strong>: Returns the elements in the list that come after the </span></span></li><li><span class="tab"><span class="comment line">#   specified global ID.</span></span></li><li><span class="tab"><span class="comment line">#   <strong>last</strong>: Returns the last _n_ elements from the list.</span></span></li><li><span class="tab"><span class="comment line">#   <strong>before</strong>: Returns the elements in the list that come before the </span></span></li><li><span class="tab"><span class="comment line">#   specified global ID.</span></span></li><li><span class="tab"><span class="meta">images</span>(<span class="meta">first</span>: <a class="support type" href="int.doc.html">Int</a>, <span class="meta">after</span>: <a class="support type" href="string.doc.html">String</a>, <span class="meta">last</span>: <a class="support type" href="int.doc.html">Int</a>, <span class="meta">before</span>: <a class="support type" href="string.doc.html">String</a>): <a class="support type" href="imageconnection.doc.html">ImageConnection</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   类型记录相应ID</span></span></li><li><span class="tab"><span class="meta">itemId</span>: <a class="support type" href="int.doc.html">Int</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   足迹类型</span></span></li><li><span class="tab"><span class="meta">itemType</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   标题</span></span></li><li><span class="tab"><span class="meta">title</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>
@@ -505,7 +505,7 @@
             </a>
             Require by
         </h2>
-        <ul class="require-by"><li><a href="feededge.doc.html" title="FeedEdge - An edge in a connection.">FeedEdge<em>An edge in a connection.</em></a><li></ul>
+        <ul class="require-by"><li><a href="growthreportitemedge.doc.html" title="GrowthReportItemEdge - An edge in a connection.">GrowthReportItemEdge<em>An edge in a connection.</em></a><li></ul>
     </div>
 </section>
 <footer>

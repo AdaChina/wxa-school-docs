@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
-    <title>Feed</title>
+    <title>UploadTypeEnum</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./assets/code.css" /><link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
 </head>
 <body class="slds-scrollable--y">
@@ -100,7 +100,7 @@
                 ShareableEnum
             </a>
         </li>
-        <li  title="UploadTypeEnum">
+        <li class="slds-is-active" title="UploadTypeEnum">
             <a href="uploadtypeenum.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 UploadTypeEnum
             </a>
@@ -185,7 +185,7 @@
                 FeatureEdge
             </a>
         </li>
-        <li class="slds-is-active" title="Feed">
+        <li  title="Feed">
             <a href="feed.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 Feed
             </a>
@@ -480,9 +480,9 @@
         </div>
     </div>
     <div class="container">
-        <p class="slds-text-title--caps slds-text-color--weak">OBJECT</p>
-        <h1 class="slds-text-heading--large">Feed</h1>
-        <div class="slds-text-body--regular"><p>资讯</p>
+        <p class="slds-text-title--caps slds-text-color--weak">ENUM</p>
+        <h1 class="slds-text-heading--large">UploadTypeEnum</h1>
+        <div class="slds-text-body--regular"><p>上传类型</p>
 </div>
     </div>
 </section>
@@ -494,7 +494,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">Feed</span> {</li><li></li><li><span class="tab"><span class="meta">date</span>: <a class="support type" href="date.doc.html">Date</a>! </span></li><li></li><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="id.doc.html">ID</a>! </span></li><li></li><li><span class="tab"><span class="meta">imageUrl</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="meta">newContent</span>: <a class="support type" href="boolean.doc.html">Boolean</a> </span></li><li></li><li><span class="tab"><span class="meta">thumbUrl</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="meta">title</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">enum</span> <span class="identifier">UploadTypeEnum</span> {</li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   简介</span></span></li><li><span class="tab"><span class="meta">feature</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   表彰</span></span></li><li><span class="tab"><span class="meta">praise</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   照片</span></span></li><li><span class="tab"><span class="meta">photo</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   通知</span></span></li><li><span class="tab"><span class="meta">client_noti</span></span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>
@@ -505,7 +505,7 @@
             </a>
             Require by
         </h2>
-        <ul class="require-by"><li><a href="feededge.doc.html" title="FeedEdge - An edge in a connection.">FeedEdge<em>An edge in a connection.</em></a><li></ul>
+        <ul class="require-by"><li><a href="wxaschoolquery.doc.html" title="WxaSchoolQuery - ">WxaSchoolQuery<em>null</em></a><li></ul>
     </div>
 </section>
 <footer>

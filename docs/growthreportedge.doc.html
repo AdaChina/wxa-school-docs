@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
-    <title>UploadFile</title>
+    <title>GrowthReportEdge</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./assets/code.css" /><link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
 </head>
 <body class="slds-scrollable--y">
@@ -70,11 +70,6 @@
                 String
             </a>
         </li>
-        <li class="slds-is-active" title="UploadFile">
-            <a href="uploadfile.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                UploadFile
-            </a>
-        </li>
     </ul>
 </div>
 <div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
@@ -103,6 +98,11 @@
         <li  title="ShareableEnum">
             <a href="shareableenum.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 ShareableEnum
+            </a>
+        </li>
+        <li  title="UploadTypeEnum">
+            <a href="uploadtypeenum.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UploadTypeEnum
             </a>
         </li>
         <li  title="WxaEnum">
@@ -200,6 +200,51 @@
                 FeedEdge
             </a>
         </li>
+        <li  title="GrowthReport">
+            <a href="growthreport.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                GrowthReport
+            </a>
+        </li>
+        <li  title="GrowthReportConnection">
+            <a href="growthreportconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                GrowthReportConnection
+            </a>
+        </li>
+        <li class="slds-is-active" title="GrowthReportEdge">
+            <a href="growthreportedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                GrowthReportEdge
+            </a>
+        </li>
+        <li  title="GrowthReportItem">
+            <a href="growthreportitem.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                GrowthReportItem
+            </a>
+        </li>
+        <li  title="GrowthReportItemConnection">
+            <a href="growthreportitemconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                GrowthReportItemConnection
+            </a>
+        </li>
+        <li  title="GrowthReportItemEdge">
+            <a href="growthreportitemedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                GrowthReportItemEdge
+            </a>
+        </li>
+        <li  title="Image">
+            <a href="image.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Image
+            </a>
+        </li>
+        <li  title="ImageConnection">
+            <a href="imageconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ImageConnection
+            </a>
+        </li>
+        <li  title="ImageEdge">
+            <a href="imageedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ImageEdge
+            </a>
+        </li>
         <li  title="PageInfo">
             <a href="pageinfo.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 PageInfo
@@ -263,6 +308,11 @@
         <li  title="PraiseOpinion">
             <a href="praiseopinion.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 PraiseOpinion
+            </a>
+        </li>
+        <li  title="QiniuCertificate">
+            <a href="qiniucertificate.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                QiniuCertificate
             </a>
         </li>
         <li  title="School">
@@ -430,9 +480,9 @@
         </div>
     </div>
     <div class="container">
-        <p class="slds-text-title--caps slds-text-color--weak">SCALAR</p>
-        <h1 class="slds-text-heading--large">UploadFile</h1>
-        <div class="slds-text-body--regular"><p>上传文件的类型，会读取表单中字段为&#39;file&#39;的参数</p>
+        <p class="slds-text-title--caps slds-text-color--weak">OBJECT</p>
+        <h1 class="slds-text-heading--large">GrowthReportEdge</h1>
+        <div class="slds-text-body--regular"><p>An edge in a connection.</p>
 </div>
     </div>
 </section>
@@ -444,7 +494,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:28px"><li><span class="keyword operator ts">scalar</span> <span class="identifier">UploadFile</span></li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:28px"><li><span class="keyword operator ts">type</span> <span class="identifier">GrowthReportEdge</span> {</li><li></li><li><span class="tab"><span class="comment line">#   A cursor for use in pagination.</span></span></li><li><span class="tab"><span class="meta">cursor</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The item at the end of the edge.</span></span></li><li><span class="tab"><span class="meta">node</span>: <a class="support type" href="growthreport.doc.html">GrowthReport</a> </span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>
@@ -455,7 +505,7 @@
             </a>
             Require by
         </h2>
-        <ul class="require-by"><li><a href="clientnotiinput.doc.html" title="ClientNotiInput - ">ClientNotiInput<em>null</em></a><li><li><a href="featureinput.doc.html" title="FeatureInput - ">FeatureInput<em>null</em></a><li><li><a href="photoinput.doc.html" title="PhotoInput - ">PhotoInput<em>null</em></a><li><li><a href="praiseinput.doc.html" title="PraiseInput - ">PraiseInput<em>null</em></a><li><li><a href="updatefeatureinput.doc.html" title="UpdateFeatureInput - ">UpdateFeatureInput<em>null</em></a><li></ul>
+        <ul class="require-by"><li><a href="growthreportconnection.doc.html" title="GrowthReportConnection - The connection type for GrowthReport.">GrowthReportConnection<em>The connection type for GrowthReport.</em></a><li></ul>
     </div>
 </section>
 <footer>

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
-    <title>Feed</title>
+    <title>GrowthReportConnection</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./assets/code.css" /><link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
 </head>
 <body class="slds-scrollable--y">
@@ -185,7 +185,7 @@
                 FeatureEdge
             </a>
         </li>
-        <li class="slds-is-active" title="Feed">
+        <li  title="Feed">
             <a href="feed.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 Feed
             </a>
@@ -205,7 +205,7 @@
                 GrowthReport
             </a>
         </li>
-        <li  title="GrowthReportConnection">
+        <li class="slds-is-active" title="GrowthReportConnection">
             <a href="growthreportconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 GrowthReportConnection
             </a>
@@ -481,8 +481,8 @@
     </div>
     <div class="container">
         <p class="slds-text-title--caps slds-text-color--weak">OBJECT</p>
-        <h1 class="slds-text-heading--large">Feed</h1>
-        <div class="slds-text-body--regular"><p>资讯</p>
+        <h1 class="slds-text-heading--large">GrowthReportConnection</h1>
+        <div class="slds-text-body--regular"><p>The connection type for GrowthReport.</p>
 </div>
     </div>
 </section>
@@ -494,7 +494,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">Feed</span> {</li><li></li><li><span class="tab"><span class="meta">date</span>: <a class="support type" href="date.doc.html">Date</a>! </span></li><li></li><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="id.doc.html">ID</a>! </span></li><li></li><li><span class="tab"><span class="meta">imageUrl</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="meta">newContent</span>: <a class="support type" href="boolean.doc.html">Boolean</a> </span></li><li></li><li><span class="tab"><span class="meta">thumbUrl</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="meta">title</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:28px"><li><span class="keyword operator ts">type</span> <span class="identifier">GrowthReportConnection</span> {</li><li></li><li><span class="tab"><span class="comment line">#   A list of edges.</span></span></li><li><span class="tab"><span class="meta">edges</span>: [<a class="support type" href="growthreportedge.doc.html">GrowthReportEdge</a>] </span></li><li></li><li><span class="tab"><span class="comment line">#   Information to aid in pagination.</span></span></li><li><span class="tab"><span class="meta">pageInfo</span>: <a class="support type" href="pageinfo.doc.html">PageInfo</a>! </span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>
@@ -505,7 +505,7 @@
             </a>
             Require by
         </h2>
-        <ul class="require-by"><li><a href="feededge.doc.html" title="FeedEdge - An edge in a connection.">FeedEdge<em>An edge in a connection.</em></a><li></ul>
+        <ul class="require-by"><li><a href="wxaschoolquery.doc.html" title="WxaSchoolQuery - ">WxaSchoolQuery<em>null</em></a><li></ul>
     </div>
 </section>
 <footer>
