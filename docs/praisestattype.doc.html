@@ -345,16 +345,6 @@
                 PraiseStatType
             </a>
         </li>
-        <li  title="PraiseStatTypeConnection">
-            <a href="praisestattypeconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                PraiseStatTypeConnection
-            </a>
-        </li>
-        <li  title="PraiseStatTypeEdge">
-            <a href="praisestattypeedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                PraiseStatTypeEdge
-            </a>
-        </li>
         <li  title="QiniuCertificate">
             <a href="qiniucertificate.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 QiniuCertificate
@@ -544,7 +534,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">PraiseStatType</span> {</li><li></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>first</strong>: Returns the first _n_ elements from the list.</span></span></li><li><span class="tab"><span class="comment line">#   <strong>after</strong>: Returns the elements in the list that come after the </span></span></li><li><span class="tab"><span class="comment line">#   specified global ID.</span></span></li><li><span class="tab"><span class="comment line">#   <strong>last</strong>: Returns the last _n_ elements from the list.</span></span></li><li><span class="tab"><span class="comment line">#   <strong>before</strong>: Returns the elements in the list that come before the </span></span></li><li><span class="tab"><span class="comment line">#   specified global ID.</span></span></li><li><span class="tab"><span class="meta">praises</span>(<span class="meta">first</span>: <a class="support type" href="int.doc.html">Int</a>, <span class="meta">after</span>: <a class="support type" href="string.doc.html">String</a>, <span class="meta">last</span>: <a class="support type" href="int.doc.html">Int</a>, <span class="meta">before</span>: <a class="support type" href="string.doc.html">String</a>): <a class="support type" href="praiseconnection.doc.html">PraiseConnection</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   下级查询引用值</span></span></li><li><span class="tab"><span class="meta">refValue</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   副标题</span></span></li><li><span class="tab"><span class="meta">subTitle</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   标题</span></span></li><li><span class="tab"><span class="meta">title</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   统计值</span></span></li><li><span class="tab"><span class="meta">value</span>: <a class="support type" href="int.doc.html">Int</a> </span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">PraiseStatType</span> {</li><li></li><li><span class="tab"><span class="meta">praises</span>: [<a class="support type" href="praise.doc.html">Praise</a>] </span></li><li></li><li><span class="tab"><span class="comment line">#   下级查询引用值</span></span></li><li><span class="tab"><span class="meta">refValue</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   副标题</span></span></li><li><span class="tab"><span class="meta">subTitle</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   标题</span></span></li><li><span class="tab"><span class="meta">title</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   统计值</span></span></li><li><span class="tab"><span class="meta">value</span>: <a class="support type" href="int.doc.html">Int</a> </span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>
@@ -555,7 +545,7 @@
             </a>
             Require by
         </h2>
-        <ul class="require-by"><li><a href="praisestattypeedge.doc.html" title="PraiseStatTypeEdge - An edge in a connection.">PraiseStatTypeEdge<em>An edge in a connection.</em></a><li><li><a href="wxaschoolquery.doc.html" title="WxaSchoolQuery - ">WxaSchoolQuery<em>null</em></a><li></ul>
+        <ul class="require-by"><li><a href="wxaschoolquery.doc.html" title="WxaSchoolQuery - ">WxaSchoolQuery<em>null</em></a><li></ul>
     </div>
 </section>
 <footer>
