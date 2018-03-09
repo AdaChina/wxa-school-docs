@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
-    <title>CustomHonorLevelEnum</title>
+    <title>ClassTerm</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./assets/code.css" /><link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
 </head>
 <body class="slds-scrollable--y">
@@ -85,7 +85,7 @@
                 CommentableTypeEnum
             </a>
         </li>
-        <li class="slds-is-active" title="CustomHonorLevelEnum">
+        <li  title="CustomHonorLevelEnum">
             <a href="customhonorlevelenum.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 CustomHonorLevelEnum
             </a>
@@ -150,7 +150,7 @@
                 ClassHomeworkStatistics
             </a>
         </li>
-        <li  title="ClassTerm">
+        <li class="slds-is-active" title="ClassTerm">
             <a href="classterm.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 ClassTerm
             </a>
@@ -590,9 +590,9 @@
         </div>
     </div>
     <div class="container">
-        <p class="slds-text-title--caps slds-text-color--weak">ENUM</p>
-        <h1 class="slds-text-heading--large">CustomHonorLevelEnum</h1>
-        <div class="slds-text-body--regular"><p>获奖级别类型</p>
+        <p class="slds-text-title--caps slds-text-color--weak">OBJECT</p>
+        <h1 class="slds-text-heading--large">ClassTerm</h1>
+        <div class="slds-text-body--regular"><p>班级学期信息</p>
 </div>
     </div>
 </section>
@@ -604,7 +604,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">enum</span> <span class="identifier">CustomHonorLevelEnum</span> {</li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   国家级</span></span></li><li><span class="tab"><span class="meta">country</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   省级</span></span></li><li><span class="tab"><span class="meta">province</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   市级</span></span></li><li><span class="tab"><span class="meta">city</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   区级</span></span></li><li><span class="tab"><span class="meta">district</span></span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:28px"><li><span class="keyword operator ts">type</span> <span class="identifier">ClassTerm</span> {</li><li></li><li><span class="tab"><span class="meta">grade</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="meta">term</span>: <a class="support type" href="term.doc.html">Term</a>! </span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>
@@ -615,7 +615,7 @@
             </a>
             Require by
         </h2>
-        <ul class="require-by"><li><a href="customhonor.doc.html" title="CustomHonor - 家长上传的荣誉">CustomHonor<em>家长上传的荣誉</em></a><li></ul>
+        <ul class="require-by"><li><a href="wxaschoolquery.doc.html" title="WxaSchoolQuery - ">WxaSchoolQuery<em>null</em></a><li></ul>
     </div>
 </section>
 <footer>
