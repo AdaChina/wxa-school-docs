@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
-    <title>SchoolAbilityConfig</title>
+    <title>SchoolCapabilityConfig</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./assets/code.css" /><link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
 </head>
 <body class="slds-scrollable--y">
@@ -425,11 +425,6 @@
                 School
             </a>
         </li>
-        <li class="slds-is-active" title="SchoolAbilityConfig">
-            <a href="schoolabilityconfig.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                SchoolAbilityConfig
-            </a>
-        </li>
         <li  title="SchoolAlert">
             <a href="schoolalert.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 SchoolAlert
@@ -443,6 +438,11 @@
         <li  title="SchoolAlertEdge">
             <a href="schoolalertedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 SchoolAlertEdge
+            </a>
+        </li>
+        <li class="slds-is-active" title="SchoolCapabilityConfig">
+            <a href="schoolcapabilityconfig.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SchoolCapabilityConfig
             </a>
         </li>
         <li  title="SchoolNotification">
@@ -601,7 +601,7 @@
     </div>
     <div class="container">
         <p class="slds-text-title--caps slds-text-color--weak">OBJECT</p>
-        <h1 class="slds-text-heading--large">SchoolAbilityConfig</h1>
+        <h1 class="slds-text-heading--large">SchoolCapabilityConfig</h1>
         <div class="slds-text-body--regular"><p>学校功能配置</p>
 </div>
     </div>
@@ -614,7 +614,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">SchoolAbilityConfig</span> {</li><li></li><li><span class="tab"><span class="comment line">#   学校是否启用学生荣誉功能</span></span></li><li><span class="tab"><span class="meta">enableCustomHonor</span>: <a class="support type" href="boolean.doc.html">Boolean</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   学校是否启用留言功能</span></span></li><li><span class="tab"><span class="meta">enableMemo</span>: <a class="support type" href="boolean.doc.html">Boolean</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   学校是否启用考勤功能</span></span></li><li><span class="tab"><span class="meta">enableSignIn</span>: <a class="support type" href="boolean.doc.html">Boolean</a> </span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:28px"><li><span class="keyword operator ts">type</span> <span class="identifier">SchoolCapabilityConfig</span> {</li><li></li><li><span class="tab"><span class="comment line">#   学校是否启用考勤功能</span></span></li><li><span class="tab"><span class="meta">enableAttendance</span>: <a class="support type" href="boolean.doc.html">Boolean</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   学校是否启用留言功能</span></span></li><li><span class="tab"><span class="meta">enableMemo</span>: <a class="support type" href="boolean.doc.html">Boolean</a> </span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>
