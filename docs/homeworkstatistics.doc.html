@@ -140,11 +140,6 @@
                 ArtHomework
             </a>
         </li>
-        <li  title="Bmi">
-            <a href="bmi.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                Bmi
-            </a>
-        </li>
         <li  title="BmiGuideline">
             <a href="bmiguideline.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 BmiGuideline
@@ -195,11 +190,6 @@
                 CommonUser
             </a>
         </li>
-        <li  title="CountryHomework">
-            <a href="countryhomework.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                CountryHomework
-            </a>
-        </li>
         <li  title="CourseAttributes">
             <a href="courseattributes.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 CourseAttributes
@@ -228,6 +218,11 @@
         <li  title="CustomHonorStatistics">
             <a href="customhonorstatistics.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 CustomHonorStatistics
+            </a>
+        </li>
+        <li  title="EnvironmentHomework">
+            <a href="environmenthomework.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                EnvironmentHomework
             </a>
         </li>
         <li  title="Feature">
@@ -485,6 +480,11 @@
                 Teacher
             </a>
         </li>
+        <li  title="TechHomeworkType">
+            <a href="techhomeworktype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                TechHomeworkType
+            </a>
+        </li>
         <li  title="Term">
             <a href="term.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 Term
@@ -614,7 +614,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">HomeworkStatistics</span> {</li><li></li><li><span class="tab"><span class="comment line">#   艺术类作业已提交数</span></span></li><li><span class="tab"><span class="meta">artCount</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   艺术类作业所需数量</span></span></li><li><span class="tab"><span class="meta">artTotal</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   全班完成数</span></span></li><li><span class="tab"><span class="meta">classCompleteCount</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   爱国类作业已提交数</span></span></li><li><span class="tab"><span class="meta">countryCount</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   爱国类类作业所需数量</span></span></li><li><span class="tab"><span class="meta">countryTotal</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   健康类作业已提交数</span></span></li><li><span class="tab"><span class="meta">healthCount</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   健康类作业所需数量</span></span></li><li><span class="tab"><span class="meta">healthTotal</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   实践类作业已提交数</span></span></li><li><span class="tab"><span class="meta">practiceCount</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   实践类作业所需数量</span></span></li><li><span class="tab"><span class="meta">practiceTotal</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   阅读类作业已提交数</span></span></li><li><span class="tab"><span class="meta">readingCount</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   阅读类作业所需数量</span></span></li><li><span class="tab"><span class="meta">readingTotal</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   安全类作业已提交数</span></span></li><li><span class="tab"><span class="meta">safetyCount</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   安全类作业所需数量</span></span></li><li><span class="tab"><span class="meta">safetyTotal</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">HomeworkStatistics</span> {</li><li></li><li><span class="tab"><span class="comment line">#   艺术类作业已提交数</span></span></li><li><span class="tab"><span class="meta">artCount</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   艺术类作业所需数量</span></span></li><li><span class="tab"><span class="meta">artTotal</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   全班完成数</span></span></li><li><span class="tab"><span class="meta">classCompleteCount</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   环保类作业已提交数</span></span></li><li><span class="tab"><span class="meta">environmentCount</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   环保类作业所需数量</span></span></li><li><span class="tab"><span class="meta">environmentTotal</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   健康类作业已提交数</span></span></li><li><span class="tab"><span class="meta">healthCount</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   健康类作业所需数量</span></span></li><li><span class="tab"><span class="meta">healthTotal</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   实践类作业已提交数</span></span></li><li><span class="tab"><span class="meta">practiceCount</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   实践类作业所需数量</span></span></li><li><span class="tab"><span class="meta">practiceTotal</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   阅读类作业已提交数</span></span></li><li><span class="tab"><span class="meta">readingCount</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   阅读类作业所需数量</span></span></li><li><span class="tab"><span class="meta">readingTotal</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   安全类作业已提交数</span></span></li><li><span class="tab"><span class="meta">safetyCount</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   安全类作业所需数量</span></span></li><li><span class="tab"><span class="meta">safetyTotal</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   科技类作业已提交数</span></span></li><li><span class="tab"><span class="meta">techCount</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   科技类作业所需数量</span></span></li><li><span class="tab"><span class="meta">techTotal</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>
