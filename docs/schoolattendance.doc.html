@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
-    <title>SchoolNotificationEdge</title>
+    <title>SchoolAttendance</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./assets/code.css" /><link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
 </head>
 <body class="slds-scrollable--y">
@@ -445,7 +445,7 @@
                 SchoolAlertEdge
             </a>
         </li>
-        <li  title="SchoolAttendance">
+        <li class="slds-is-active" title="SchoolAttendance">
             <a href="schoolattendance.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 SchoolAttendance
             </a>
@@ -475,7 +475,7 @@
                 SchoolNotificationConnection
             </a>
         </li>
-        <li class="slds-is-active" title="SchoolNotificationEdge">
+        <li  title="SchoolNotificationEdge">
             <a href="schoolnotificationedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 SchoolNotificationEdge
             </a>
@@ -626,8 +626,8 @@
     </div>
     <div class="container">
         <p class="slds-text-title--caps slds-text-color--weak">OBJECT</p>
-        <h1 class="slds-text-heading--large">SchoolNotificationEdge</h1>
-        <div class="slds-text-body--regular"><p>An edge in a connection.</p>
+        <h1 class="slds-text-heading--large">SchoolAttendance</h1>
+        <div class="slds-text-body--regular"><p>学生上学/放学考勤</p>
 </div>
     </div>
 </section>
@@ -639,7 +639,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:28px"><li><span class="keyword operator ts">type</span> <span class="identifier">SchoolNotificationEdge</span> {</li><li></li><li><span class="tab"><span class="comment line">#   A cursor for use in pagination.</span></span></li><li><span class="tab"><span class="meta">cursor</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The item at the end of the edge.</span></span></li><li><span class="tab"><span class="meta">node</span>: <a class="support type" href="schoolnotification.doc.html">SchoolNotification</a> </span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">SchoolAttendance</span> {</li><li></li><li><span class="tab"><span class="meta">classification</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="meta">eventAt</span>: <a class="support type" href="datetime.doc.html">Datetime</a>! </span></li><li></li><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="id.doc.html">ID</a>! </span></li><li></li><li><span class="tab"><span class="meta">status</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>
@@ -650,7 +650,7 @@
             </a>
             Require by
         </h2>
-        <ul class="require-by"><li><a href="schoolnotificationconnection.doc.html" title="SchoolNotificationConnection - The connection type for SchoolNotification.">SchoolNotificationConnection<em>The connection type for SchoolNotification.</em></a><li></ul>
+        <ul class="require-by"><li><a href="schoolattendanceedge.doc.html" title="SchoolAttendanceEdge - An edge in a connection.">SchoolAttendanceEdge<em>An edge in a connection.</em></a><li></ul>
     </div>
 </section>
 <footer>
